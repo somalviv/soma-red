@@ -1,0 +1,286 @@
+
+body {
+	background: #fff;
+}
+
+h1 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.container-fluid {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+/**
+ * Header
+ */
+.header h1 {
+	color: #fff;
+	font-size: 64px;
+	text-shadow: -2px 0 #fe2a00, 0 2px #fe2a00, 2px 0 #fe2a00, 0 -2px #fe2a00;
+}
+
+.header h1 span {
+	position: absolute;
+}
+
+.header h1 span:nth-child(1) {
+	position: relative;
+}
+
+.header h1 span:nth-child(2) {
+	top: 50%;
+	left: 40%;
+}
+
+.header h1 span:nth-child(3) {
+	top: 60%;
+	left: 45%;
+}
+
+.header h1 span:nth-child(4) {
+	top: 70%;
+	left: 60%;
+}
+
+.header p {
+	display: inline-block;
+	padding: 16px 256px 96px 16px;
+	color: #fe2a00;
+	border: 8px solid #fe2a00;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+/**
+ * Nav
+ */
+.nav-link {
+	color: #fe2a00;
+	font-weight: bold;
+}
+
+.nav-link:before {
+	content: '/ ';
+}
+
+/**
+ * Ellipses
+ */
+.ellipses {
+	margin-top: 32px;
+	margin-left: 64px;
+}
+
+.ellipse {
+	margin-left: -34px;
+	height: 128px;
+	width: 64px;
+	float: left;
+	border: 4px solid #fe2a00;
+	border-radius: 50%;
+}
+
+.ellipse:nth-child(1) {
+	margin-left: 0;
+}
+
+/**
+ * Description
+ */
+.description {
+	position: absolute;
+	bottom: 0;
+}
+
+/**
+ * Btn
+ */
+.btn {
+	border-radius: 0;
+	letter-spacing: 8px;
+	font-weight:bold;
+}
+
+.btn-outline-primary {
+	color: #fe2a00;
+	border-color: #fe2a00;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #fe2a00;
+	border-color: #fe2a00;
+}
+
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: #fe2a00;
+	border-color: #fe2a00;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #fe2a00;
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+	box-shadow: 0 0 0 .2rem #fe2a00;
+}
+
+/**
+ * Page
+ */
+.page {
+	height: 100vh;
+}
+
+.page h2 {
+	padding-top: 32px;
+	padding-bottom: 48px;
+	color: #fe2a00;
+}
+
+.page h2:before {
+	content: '/ ';
+}
+
+/**
+ * Layer
+ */
+.layer {}
+
+.circle {
+	position: absolute;
+	top: 20%;
+	right: 15%;
+	height: 256px;
+	width: 256px;
+	background: #fe2a00;
+	border: 1px solid #fe2a00;
+	border-radius: 50%;
+
+	-webkit-box-shadow:0px 0px 32px 32px #fe2a00;
+	   -moz-box-shadow:0px 0px 32px 32px #fe2a00;
+	        box-shadow:0px 0px 32px 32px #fe2a00;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	color: #fe2a00;
+}
+
+
+
+
+
+
+
+/**
+ * Carousel
+ */
+.carousel {
+-webkit-box-shadow: -20px -20px 0px -5px #fff, -20px -20px 0px 0px #000;
+   -moz-box-shadow: -20px -20px 0px -5px #fff, -20px -20px 0px 0px #000;
+        box-shadow: -20px -20px 0px -5px #fff, -20px -20px 0px 0px #000;
+}
+
+/**
+ * Workshop
+ */
+#workshop section {
+	position: relative;
+	display: inline-block;
+	padding: 16px;
+	border: 8px solid #fe2a00;
+}
+
+#workshop section:nth-child(1) {
+}
+
+#workshop section h3 {
+}
+
+#workshop section p {
+}
+
+/**
+ * Schedule
+ */
+#schedule {
+	height: auto !important;
+}
+
+
+
+
+
+
+
+/**
+ * Media
+ */
+@media (max-width: 800px) {
+
+	/**
+	 * Soma
+	 */
+	.header h1 span:nth-child(1),
+	.header h1 span:nth-child(2),
+	.header h1 span:nth-child(3),
+	.header h1 span:nth-child(4) {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+
+	/**
+	 * Circle
+	 */
+	.circle {
+		right: -75%;
+	}
+
+	/**
+	 * Ellipses
+	 */
+	.ellipses {
+		margin: 32px auto;
+		overflow: auto;
+	}
+
+	/**
+	 * Description
+	 */
+	.description {
+		position: relative;
+	}
+
+	/**
+	 * Page
+	 */
+	.page {
+		height: auto;
+	}
+
+	/**
+	 * Carousel
+	 */
+	.carousel {
+		margin-bottom: 32px;
+	}
+
+	/**
+	 * Workshop
+	 */
+	#workshop section {
+
+	}
+}
