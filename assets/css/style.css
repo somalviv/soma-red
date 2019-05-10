@@ -104,6 +104,7 @@ h1 {
 	border-radius: 0;
 	letter-spacing: 8px;
 	font-weight:bold;
+	text-decoration: none !important;
 }
 
 .btn-outline-primary {
@@ -152,6 +153,16 @@ h1 {
 	content: '/ ';
 }
 
+.page p > a {
+	color: #fe2a00;
+	text-decoration: underline;
+}
+
+.page p > a:hover,
+.page p > a:focus {
+	text-decoration: none;
+}
+
 /**
  * Layer
  */
@@ -159,8 +170,6 @@ h1 {
 
 .circle {
 	position: absolute;
-	top: 20%;
-	right: 15%;
 	height: 256px;
 	width: 256px;
 	background: #fe2a00;
