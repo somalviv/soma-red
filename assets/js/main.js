@@ -1,5 +1,5 @@
 var linkNav = document.querySelectorAll( '[href^="#"]' ),
-	V = 1;
+	V = 0.4;
 for ( var i = 0; i < linkNav.length; i++ ) {
 	linkNav[i].addEventListener( 'click', function( e ) {
 		e.preventDefault();
